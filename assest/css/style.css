@@ -13,7 +13,7 @@ body {
   cursor: crosshair;
 }
 
-.bubble {
+.bubble, .bubbleBlack {
   position: absolute;
   border-radius: 300px;
   background: rgba(255, 166, 0, 0.6);
@@ -22,10 +22,30 @@ body {
   filter: hue-rotate(0deg);
 }
 
+.bubbleBlack {
+  background: #212124;
+}
+
 h3 {
   font-size: 10rem;
   text-align: center;
   margin-top: 20px;
   color: rgba(44, 44, 175, 0.486);
   user-select: none;
+}
+
+#flex {
+  display: flex;
+  justify-content: center;
+}
+
+#play {
+  background: #090979;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 200px;
+  padding: 1rem;
+  font-size: 1.2rem;
 }
